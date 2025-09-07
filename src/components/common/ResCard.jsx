@@ -72,7 +72,7 @@ const ResultCard = () => {
   }, []);
 
   return (
-    <div className="bg-[#C8D0FA50] lg:pt-25 px-13 ">
+    <div className="bg-[#C8D0FA50] lg:pt-25 px-13 pb-24 ">
       <h1 className="font-futura font-bold md:text-3xl text-2xl lg:text-6xl tracking-[-2%] uppercase text-blue-900 text-center mb-10">
         marketing that gets results
       </h1>

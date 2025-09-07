@@ -33,7 +33,9 @@ const Header = () => {
                     ))}
                   </div>
                   <p className="capitalize text-sm lg:text-xl text-textB">
-                    trusted by <span className="text-[#181D27] font-semibold">2000+</span> brands worldwide
+                    trusted by{" "}
+                    <span className="text-[#181D27] font-semibold">2000+</span>{" "}
+                    brands worldwide
                   </p>
                 </div>
               </div>
@@ -64,7 +66,7 @@ const Header = () => {
         </div>
 
         <div className="w-auto md:flex hidden justify-center  pr-6.25 pt-35 ">
-          <div className="lg:w-[32.18rem] lg:h-[38.75rem] md:w-[17rem] md:h-[23rem] border-[0.20rem] border-white rounded-3xl relative overflow-hidden object-center">
+          <div className="lg:w-[32.18rem] lg:h-[38.75rem] md:w-[17rem] md:h-[23rem] border-[0.20rem] border-white rounded-3xl relative overflow-hidden object-bottom object-cover">
             <img
               src={bannerimage}
               alt=""
@@ -77,18 +79,18 @@ const Header = () => {
                 className="md:h-10 h-7 w-auto absolute top-7 left-7"
               />
             </div>
-            <div className="flex z-2 items-center justify-end h-full mx-auto top-1/ gap-4 absolute flex-col bg-gradient-to-b  from-transparent to-[#00000050] w-full md:pb-10 lg:pb-30">
-              <div className="font-futura text-sm px-3 lg:text-3xl text-white uppercase text-center">
+            <div className="flex z-2 items-center top-[382px] h-[14.87rem] mx-auto  gap-4 absolute flex-col bg-gradient-to-b  from-transparent from-10% to-[#00000090] to-70% w-full md:pb-10 lg:pb-30">
+              <div className="font-futura text-sm px-3 pt-20 lg:text-3xl text-white uppercase text-center">
                 <h1>author jesica miller's second novel coming this week</h1>
               </div>
-              <div className="bg-[#ffffff25] flex items-center text-white lg:gap-3 md:py-2 md:px-5 lg:py-4.5 lg:px-10 rounded-full backdrop-blur-lg">
-                <FaChevronLeft className="lg:text-xl md:text-sm" />
-                <div className="flex items-center lg:gap-5 md:gap-2">
-                  <i className="lg:h-4 lg:w-4 md:h-2 md:w-2 bg-white rounded-full"></i>
-                  <i className="lg:h-4 lg:w-4 md:h-2 md:w-2 bg-white rounded-full opacity-45"></i>
-                  <i className="lg:h-4 lg:w-4 md:h-2 md:w-2 bg-white rounded-full opacity-45"></i>
+              <div className="bg-[#ffffff30] flex items-center  justify-between w-[13.06rem] h-12 text-white px-2 py-2.5 rounded-full backdrop-blur-[3rem]">
+                <FaChevronLeft className="lg:text-3xl md:text-sm" />
+                <div className="flex items-center lg:gap-5">
+                  <i className="lg:h-3.5 lg:w-3.5 md:h-2 md:w-2 bg-white rounded-full"></i>
+                  <i className="lg:h-3.5 lg:w-3.5 md:h-2 md:w-2 bg-white rounded-full opacity-45"></i>
+                  <i className="lg:h-3.5 lg:w-3.5 md:h-2 md:w-2 bg-white rounded-full opacity-45"></i>
                 </div>
-                <FaChevronRight className="lg:text-xl md:text-sm" />
+                <FaChevronRight className="lg:text-3xl md:text-sm" />
               </div>
             </div>
           </div>

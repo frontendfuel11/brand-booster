@@ -44,12 +44,12 @@ const footerLinks = [
 
 const Footer = () => {
   return (
-    <div className="bg-[#0C0E12] w-full mt-30 pt-20 text-white">
-      <div className="flex flex-col lg:flex-row  gap-10 lg:gap-20 px-5 md:px-20 lg:px-40">
+    <div className="bg-[#0C0E12] w-full mt-30 pt-11 text-white">
+      <div className="flex flex-col lg:flex-row  gap-10 lg:gap-10 px-11 ">
         {/* Company Info Section */}
-        <div className="w-full lg:w-[25%]">
-          <img src={logo} alt="Brand Logo" className="mb-6 h-16 md:h-20 lg:h-24 w-auto" />
-          <p className="text-sm md:text-base lg:text-[1rem] tracking-wide font-[400] text-[#94979C] leading-relaxed">
+        <div className="w-full lg:w-80">
+          <img src={logo} alt="Brand Logo" className="mb-6 h-12 w-auto" />
+          <p className="text-[1rem] md:text-base font-normal tracking-wide text-[#94979C] leading-relaxed">
             Liplyn Information Group <br />
             Marathon 9a, 1213 PE Hilversum <br />
             The Netherlands
@@ -57,20 +57,20 @@ const Footer = () => {
         </div>
 
         {/* Links and Contact Section */}
-        <div className="flex flex-col lg:flex-row gap-10 lg:gap-30 w-full lg:w-auto">
+        <div className="flex flex-col lg:flex-row gap-8  w-full lg:w-auto">
           {/* Links Sections - Stack on mobile, row on tablet/desktop */}
-          <div className="flex flex-col lg:flex-row   gap-10 md:gap-15 lg:gap-30">
+          <div className="flex flex-col lg:flex-row   gap-11">
             {footerLinks.map((section, index) => (
-              <div key={index} className="w-full md:w-auto">
-                <h3 className="mb-4 text-lg md:text-xl font-semibold uppercase tracking-wide text-white">
+              <div key={index} className="w-[11.5rem]">
+                <h3 className="mb-4 text-sm font-medium leading-5 uppercase tracking-wide text-white">
                   {section.heading}
                 </h3>
-                <ul className="space-y-2">
+                <ul className="space-y-4">
                   {section.links.map((link, i) => (
                     <li key={i}>
                       <Link
                         to={link.to}
-                        className="text-sm md:text-base lg:text-lg text-gray-400 hover:text-[#AED8E1] transition capitalize"
+                        className="text-sm md:text-base  text-gray-400 hover:text-[#AED8E1] transition capitalize"
                       >
                         {link.name}
                       </Link>
@@ -83,20 +83,20 @@ const Footer = () => {
 
           {/* Contact Section */}
           <div className="w-full md:w-auto">
-            <h3 className="mb-4 text-lg md:text-xl font-semibold uppercase tracking-wide text-white">
+            <h3 className="mb-4 text-sm font-semibold uppercase tracking-wide text-white">
               Contact Us
             </h3>
             <ul className="space-y-4">
-              <li className="text-sm md:text-base lg:text-lg text-gray-400 hover:text-[#AED8E1] transition capitalize">
+              <li className="text-md text-gray-400 hover:text-[#AED8E1] transition capitalize">
                 <Link to="/contact">contact us</Link>
               </li>
               <li className="flex items-center gap-3 text-gray-300 hover:text-white transition">
                 <FaPhoneAlt className="text-[#AED8E1] text-sm md:text-base" />
-                <span className="text-sm md:text-base lg:text-lg">+020 308 6934</span>
+                <span className="text-sm">+020 308 6934</span>
               </li>
               <li className="flex items-center gap-3 text-gray-300 hover:text-white transition">
                 <FaEnvelope className="text-[#AED8E1] text-sm md:text-base" />
-                <span className="text-sm md:text-base lg:text-lg">hello@brandboosterhq.com</span>
+                <span className="text-sm">hello@brandboosterhq.com</span>
               </li>
             </ul>
           </div>

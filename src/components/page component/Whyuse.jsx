@@ -3,15 +3,15 @@ import WhyUseCard from "../common/WhyUse";
 
 const Whyuse = () => {
   return (
-    <div className="py-20 flex flex-col justify-center items-center space-y-10">
+    <div className=" flex flex-col justify-center items-center space-y-10 mb-23">
       <div className="space-y-3 text-center">
-        <h1 className="text-6xl text-blue-900 font-futura font-bold uppercase">
+        <h1 className="text-[4rem] tracking-[-2%] leading-[92%] text-blue-900 font-futura font-bold uppercase">
           why use brandBooster ?
         </h1>
-        <p className="text-textB text-xl ">With years of experience and over 10,000 published news stories, you can expect the best results publishing with us.</p>
+        <p className="text-textB text-lg leading-[150%] ">With years of experience and over 10,000 published news stories, you can expect the best results publishing with us.</p>
       </div>
       <WhyUseCard/>
-      <button className="text-xl text-white bg-gradient-to-tr from-sky to-blue px-10 py-5 capitalize rounded-full cursor-pointer">
+      <button className="text-lg w-51 h-12 text-white bg-gradient-to-tr from-sky to-blue  capitalize rounded-full cursor-pointer">
           get started
       </button>
     </div>

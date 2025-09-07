@@ -1,25 +1,37 @@
 import React from 'react'
 
 const PackageRc = () => {
+  const statsData = [
+    {
+      id: 'price',
+      value: '€195',
+      label: 'total price'
+    },
+    {
+      id: 'sites',
+      value: '200',
+      label: 'news sites'
+    },
+    {
+      id: 'readers',
+      value: '2.2M',
+      label: 'monthly readers'
+    },
+    {
+      id: 'authority',
+      value: '69',
+      label: 'MAX AUTHORITY'
+    }
+  ];
+
   return (
-    <div className='flex flex-wrap items-center justify-center gap-30 mt-20 px-40'>
-      <div className="flex flex-col items-center justify-center gap-3">
-          <h3 className='text-futura font-extrabold text-7xl text-blue-900'>€195</h3>
-          <p className='text-xl uppercase text-textB tracking-wide text-center'>total price</p>
-      </div>
-      <div className="flex flex-col items-center justify-center gap-3">
-          <h3 className='text-futura font-extrabold text-7xl text-blue-900'>200</h3>
-          <p className='text-xl uppercase text-textB tracking-wide text-center'>news sites</p>
-      </div>
-      <div className="flex flex-col items-center justify-center gap-3">
-          <h3 className='text-futura font-extrabold text-7xl text-blue-900'>2.2M</h3>
-          <p className='text-xl uppercase text-textB tracking-wide text-center'>monthly readers</p>
-      </div>
-      <div className="flex flex-col items-center justify-center gap-3">
-          <h3 className='text-futura font-extrabold text-7xl text-blue-900'>69</h3>
-          <p className='text-xl uppercase text-textB tracking-wide text-center'>MAX AUTHORITY</p>
-      </div>
-      
+    <div className='flex  items-center justify-center gap-[7.75rem] mt-11 w-[60.5rem] mx-auto'>
+      {statsData.map((stat) => (
+        <div key={stat.id} className="flex flex-col items-center justify-center gap-5">
+          <h3 className='text-futura font-extrabold text-[3.75rem] text-blue-900 leading-[92%] tracking-[-10%]'>{stat.value}</h3>
+          <p className='text-sm uppercase text-textB tracking-wide text-center'>{stat.label}</p>
+        </div>
+      ))}
     </div>
   )
 }

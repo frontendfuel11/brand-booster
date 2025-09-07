@@ -117,15 +117,15 @@ const plans = [
 
 const Check = () => (
   <div className="flex items-center justify-center w-full">
-    <span className="text-[#079455] font-bold text-sm w-6 h-6 rounded-full flex items-center justify-center border-[2.5px] border-[#079455]">
-      <FaCheck />
+    <span className="text-[#079455] font-bold text-xs w-5 h-5 rounded-full flex items-center justify-center border-[2.5px] border-[#079455]">
+      <FaCheck className="" />
     </span>
   </div>
 );
 
 const Cross = () => (
   <div className="flex items-center justify-center w-full">
-    <span className="text-[#F04438] font-bold text-sm w-6 h-6 rounded-full flex items-center justify-center border-[2.5px] border-[#F04438]">
+    <span className="text-[#F04438] font-bold text-xs w-5 h-5 rounded-full flex items-center justify-center border-[2.5px] border-[#F04438]">
       <FaX />
     </span>
   </div>
@@ -136,59 +136,59 @@ export const PricingTable = () => {
 
   return (
     <div className="overflow-x-auto p-6">
-      <div className="min-w-screen  px-40">
+      <div className="min-w-screen px-13.5">
         <table className="table-auto w-full text-sm text-center border-collapse">
-          <thead>
+          <thead >
             <tr className="border-b border-gray-300">
-              <th>
+              <th className=" w-[262.4px]">
                 <div className=""></div>
               </th>
               {plans.map((plan, idx) => (
                 <th
                   key={idx}
-                  className="text-2xl uppercase font-futura font-extrabold text-left px-6 py-4"
+                  className="text-xl uppercase font-futura font-extrabold text-left px-6 py-4  w-[262.4px]"
                 >
                   {plan.heading}
                 </th>
               ))}
             </tr>
           </thead>
-          <thead>
-            <tr>
-              <th className="p-4 flex ">
-                <div className="flex gap-3 mt-20  w-80 bg-[#E9EAEB] rounded-full px-3 py-3">
+          <thead >
+            <tr >
+              <th className="p-4 ">
+                <div className="flex items-center justify-center  mt-20  w-[14.31rem]  bg-[#E9EAEB] rounded-full  p-1.5">
                   <button
                     onClick={() => setActive("en")}
-                    className={`px-7 py-4 rounded-full flex items-center justify-center gap-4 text-lg  ${
+                    className={`w-[27rem] h-11 rounded-full gap-2 flex items-center justify-center  p-1.5 text-sm  ${
                       active === "en"
                         ? " bg-white text-textD  "
                         : " text-textB "
                     }`}
                   >
+                    <img src={engFlag} alt="" className="h-6 w-6" />
                     English
-                    <img src={engFlag} alt="" />
                   </button>
                   <button
                     onClick={() => setActive("nl")}
-                    className={`px-6 py-3 rounded-full flex items-center justify-center gap-4 text-lg ${
+                    className={`w-[27rem] h-11 rounded-full gap-2 flex items-center justify-center  p-1.5 text-sm ${
                       active === "nl"
                         ? " bg-white text-textD"
                         : " text-textB "
                     }`}
                   >
-                    Dutch
                     <img src={dutchFlag} alt="" />
+                    Dutch
                   </button>
                 </div>
               </th>
               {plans.map((plan, idx) => (
                 <th
                   key={idx}
-                  className="p-6 text-[#181D27] space-y-3 text-left bg-white  "
+                  className="pt-8 text-[#181D27] space-y-6 px-6 text-left bg-white  "
                 >
-                  <div className="px-3">
-                    <div className="text-3xl font-extrabold">{plan.price}</div>
-                    <div className="mt-1 text-sm font-medium text-[#535862]">
+                  <div className="">
+                    <div className="text-3xl font-semibold tracking-[-2%]">{plan.price}</div>
+                    <div className="mt-1 text-xs leading-5 font-medium text-[#535862]">
                       {plan.title}
                     </div>
                   </div>
@@ -218,7 +218,7 @@ export const PricingTable = () => {
               { label: "Published in days", key: "publish" },
             ].map((row, idx, arr) => (
               <tr key={idx} className={`odd:bg-white even:bg-gray-50 `}>
-                <td className="p-3 text-left font-medium text-[#181D27] flex items-center gap-2">
+                <td className="p-3 text-left font-medium text-sm leading-5 text-[#181D27] flex items-center gap-2">
                   {row.label}
                   <span className="text-xs text-gray-500 border rounded-full w-5 h-5 flex items-center justify-center">
                     ?
@@ -262,13 +262,13 @@ export const PricingTable = () => {
               { label: "Dirimble.com", key: "dir", img: img9 },
             ].map((row, idx, arr) => (
               <tr key={idx} className={`odd:bg-white even:bg-gray-50`}>
-                <td className="p-3 text-left font-medium flex items-center gap-2">
+                <td className="p-3 text-left font-medium flex items-center gap-3">
                   {row.label}
                   {row.img && (
                     <img
                       src={row.img}
                       alt={row.label}
-                      className="w-auto h-3 object-contain"
+                      className="w-auto h-5 object-contain"
                     />
                   )}
                 </td>

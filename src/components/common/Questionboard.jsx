@@ -10,8 +10,8 @@ const Questionboard = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
   return (
-    <div className="w-[70%] h-auto mx-auto bg-white mt-20 flex flex-col items-center rounded-xl pb-10 ">
-      <ul className="flex gap-4 w-[90%] h-20  items-center justify-center  mx-auto border-b-1 border-[#ccc] mb-5">
+    <div className="w-[58.25rem] h-auto mx-auto bg-white mt-11 flex flex-col items-center rounded-xl pb-10 ">
+      <ul className="flex w-full gap-4 h-20  items-center justify-center  mx-auto border-b-1 border-[#ccc] mb-5">
         {items.map((item) => {
           return (
             <li
@@ -29,12 +29,12 @@ const Questionboard = () => {
         })}
       </ul>
 
-      <div className="mt-10 w-full flex flex-col gap-5 px-10 transition-all">
+      <div className="mt-10 w-full flex flex-col gap-4 px-10 transition-all">
         {Faqs.map((Faq, index) => {
           return (
             <div
               key={Faq}
-              className={`flex flex-col px-10 w-full py-5 rounded-xl ${
+              className={`flex flex-col px-8 w-full py-5 rounded-xl ${
                 openIndex === index ? "bg-[#efefef] py-5" : "bg-white"
               }`}
             >

@@ -6,10 +6,10 @@ import PulishPackage from '../components/page component/PulishPackage'
 import Pricing from '../components/page component/Pricing'
 import MoneyBack from '../components/page component/MoneyBack'
 import Question from '../components/page component/Question'
-import Subscription from '../components/page component/Subscription'
 import Footer from '../components/page component/Footer'
 import Whyuse from '../components/page component/Whyuse'
 import ResultCard from '../components/common/ResCard'
+import ReadyGrow from '../components/common/ReadyGrow'
 
 const HomePage = () => {
   return (
@@ -23,7 +23,7 @@ const HomePage = () => {
       <MoneyBack/>
       <Whyuse/>
       <Question/>
-      <Subscription/>
+      <ReadyGrow/>
       <Footer/>
     </div>
   )
