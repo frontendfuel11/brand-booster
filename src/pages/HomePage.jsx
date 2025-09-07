@@ -13,7 +13,7 @@ import ResultCard from '../components/common/ResCard'
 
 const HomePage = () => {
   return (
-    <div>
+    <div >
       <Header/>
       <HowWorks/>
       <ResultCard/>

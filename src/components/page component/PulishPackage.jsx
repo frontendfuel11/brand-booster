@@ -13,10 +13,10 @@ const PulishPackage = () => {
   return (
     <div className="mt-30 bg-purple-50 py-20 flex flex-col justify-center">
       <div className="pb-15 space-y-5">
-        <h1 className="text-6xl font-extrabold text-blue-900 font-futura text-center uppercase ">
+        <h1 className="lg:text-6xl md:text-3xl text-2xl  font-extrabold text-blue-900 font-futura text-center uppercase ">
           publishing Packages
         </h1>
-        <p className="text-lg text-textB capitalize text-center font-Inter">
+        <p className="lg:text-lg text-sm px-3 text-textB capitalize text-center font-Inter">
           Benefit from the readership and authority our partnered news sites
           have built over many years. <br /> Our growing list of news sites
           ranks high on Google, delivering you quality readers and clicks.

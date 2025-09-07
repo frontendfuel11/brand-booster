@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.cdnfonts.com/css/futura-condensed-pt');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @theme{
@@ -12,7 +13,7 @@
   --color-blue:#13237a;
   --color-sky:#4faabe;
   --color-blue-900:#080f33;
-  --color-purple-50:#c8d0fa50;
+  --color-purple:#C8D0FA;
   --color-white-50:#ffffff50;
   --color-black-20:#00000050;
   --color-lightSky:#EDF7F9;
