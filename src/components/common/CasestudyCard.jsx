@@ -10,11 +10,11 @@ const CasestudyCard = () => {
     setData(CsData);
   }, []);
   return (
-    <div className="flex flex-wrap lg:flex-nowrap items-center justify-center gap-4 mt-12.5  px-13  md:mt-12.5 md:px-30 ">
+    <div className="flex flex-wrap lg:flex-nowrap items-center justify-center  gap-5 mt-20 w-[95%] mx-auto">
       {data.map((items, index) => {
         return (
-          <div key={index} class="md:w-[18.62rem] md:h-[30.75rem] w-75   h-auto bg-lightSky relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <div class="relative w-[18.62rem] h-[16.87rem]  ">
+          <div key={index} class="md:w-[22%] md:h-auto  bg-lightSky relative overflow-hidden rounded-xl  ">
+            <div class="relative w-[100%] h-[20.87rem]  ">
               <img
                 src={items.img}
                 alt="Office workspace"
@@ -26,22 +26,22 @@ const CasestudyCard = () => {
             </div>
             <div class="py-4 px-3 flex flex-col h-[15rem] justify-between">
               <div className="space-y-3">
-                <h3 class="text-blue-900 md:text-lg text-lg font-bold tracking-[-2%] leading-[120%] uppercase font-futura">
+                <h3 class="text-blue-900 md:text-2xl text-lg font-bold tracking-[-4%] leading-[120%] uppercase font-futura">
                   {items.name}
                 </h3>
-                <p class="text-textB text-xs leading-[120%">
-                  {items.subtext.slice(0, 80)}...
+                <p class="text-textB text-[16px] leading-[120%] ">
+                  {items.subtext.slice(0, 90)}...
                 </p>
               </div>
-              <div className="flex flex-col gap-2.5 justify-end mt-10.5 mb-4">
-              <div class="relative bg-darksky  py-3 rounded-lg border-l-3 pr-4 pl-5 border-green  ">
-                <p class="text-[10px] text-textB">
+              <div className="flex flex-col gap-2.5 justify-end  items-baseline  mb-1">
+              <div class="relative bg-darksky  py-3 rounded-lg border-l-4 pr-4 pl-5 border-green  ">
+                <p class="text-sm text-textB">
                   🔥 Fast Google Visibility &
                   <span class="font-bold text-textD">15% Longer Visits</span>
                 </p>
               </div>
               <div className="flex ">
-                <Link className="flex items-center justify-center gap-2.5 text-xs leading-[120%] capitalize font-semibold bg-gradient-to-tr from-sky to-blue bg-clip-text text-transparent">
+                <Link className="flex items-center justify-center gap-2.5 text-sm leading-[120%] capitalize font-semibold bg-gradient-to-tr from-sky to-blue bg-clip-text text-transparent">
                   view full case study <FaArrowRight className='text-blue' />
                 </Link>
               </div>

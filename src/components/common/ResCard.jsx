@@ -24,7 +24,7 @@ import ReadyGrow from "./ReadyGrow";
 export const ResultCardData = [
   {
     heading: "get qualified buyer ",
-    text: "submit a news today on high-traffic bews sites to drive qualified buyer to your website . each publication act as a landing page to warm buyers to your brands and offer before clicking through to  your website. ",
+    text: "Submit a news story on high-traffic news sites to drive qualified buyers to your website. Each publication acts as a landing page to warm buyers to your brand and offer before clicking through to your site.",
     miniImg: resultimg1,
     back: bgimg1,
     icon: heart,
@@ -73,7 +73,7 @@ const ResultCard = () => {
 
   return (
     <div className="bg-[#C8D0FA50] lg:pt-25 px-13 pb-24 ">
-      <h1 className="font-futura font-bold md:text-3xl text-2xl lg:text-6xl tracking-[-2%] uppercase text-blue-900 text-center mb-10">
+      <h1 className="font-futura font-bold md:text-3xl text-2xl lg:text-7xl tracking-[-2%] uppercase text-blue-900 text-center mb-10">
         marketing that gets results
       </h1>
       <div className=" space-y-7.5  flex flex-col items-center">
@@ -83,23 +83,23 @@ const ResultCard = () => {
           return (
             <div
               key={index}
-              className={`flex md:flex-row flex-col  items-center lg:w-[77.5rem] lg:h-[25.5rem] md:h-[17rem] md:w-full bg-white shadow-md rounded-2xl overflow-hidden`}
+              className={`flex md:flex-row flex-col   lg:w-[95%] lg:h-[33rem] md:h-[17rem] md:w-full bg-white  rounded-4xl overflow-hidden`}
             >
               {isEven ? (
                 <>
                   <div className="lg:pr-41 lg:pl-13.5 lg:py-20 px-7 py-7 flex-1   order-2 md:order-2">
-                    <div className=" lg:space-y-7 md:space-y-2 lg:mb-3 md:mb-1">
-                    <div className="space-y-4">
+                    <div className=" lg:space-y-10 md:space-y-2 lg:mb-3 md:mb-1">
+                    <div className="flex flex-col gap-7 items-start">
                       <img
                         src={item.icon}
                         alt="icon"
-                        className="w-auto lg:h-12 md:h-8 h-6 mb-1"
+                        className="w-auto lg:h-20 md:h-8 h-6 mb-1"
                       />
-                      <h3 className="lg:text-[2.75rem]  md:text-2xl text-xl font-semibold uppercase font-futura text-blue-900  ">
+                      <h3 className="lg:text-6xl  md:text-4xl text-xl font-semibold uppercase font-futura text-blue-900   ">
                         {item.heading}
                       </h3>
                     </div>
-                    <p className="text-textB lg:text-sm md:text:lg text-sm mb-4 w-[100%] leading-[150%]">
+                    <p className="text-textB lg:text-xl md:text:lg text-sm mb-4 w-[90%] leading-[150%] ">
                       {item.text}
                     </p>
                     </div>
@@ -112,7 +112,7 @@ const ResultCard = () => {
                               key={i}
                               src={avt}
                               alt="avatar"
-                              className="lg:w-8 lg:h-8 md:h-6 md:w-6 h-4 w-4 rounded-full border-2 border-white"
+                              className="lg:w-12 lg:h-12 md:h-6 md:w-6 h-4 w-4 rounded-full border-2 border-white"
                             />
                           ))}
                         </div>
@@ -127,12 +127,12 @@ const ResultCard = () => {
                     <img
                       src={item.back}
                       alt={item.heading}
-                      className="lg:w-[25.5rem] lg:h-[25.5rem] md:h-[17rem] md:w-[17rem]  object-cover"
+                      className="lg:w-[42rem] lg:h-[37rem] md:h-[17rem] md:w-[17rem]  object-cover"
                     />
                     <img
                       src={item.miniImg}
                       alt="mini"
-                      className="absolute top-1/2 mx-auto rounded-3xl    left-1/2 transform -translate-x-1/2 w-[80%] h-auto "
+                      className="absolute top-[50%] mx-auto rounded-3xl    left-1/2 transform -translate-x-1/2 w-[80%] h-auto "
                     />
                   </div>
                 </>
@@ -142,30 +142,31 @@ const ResultCard = () => {
                     <img
                       src={item.back}
                       alt={item.heading}
-                      className="lg:w-[25.5rem] lg:h-[25.5rem] md:h-[17rem] md:w-[17rem]  object-cover"
+                      className="lg:w-[42rem] lg:h-[37rem] md:h-[17rem] md:w-[17rem]  object-cover"
                     />
                     <img
                       src={item.miniImg}
                       alt="mini"
-                      className="absolute top-1/2 mx-auto left-1/2 transform -translate-x-1/2 w-[80%] h-auto "
+                      className="absolute top-[50%] mx-auto left-1/2 transform -translate-x-1/2 w-[75%] h-auto "
                     />
                   </div>
 
                   <div className="lg:px-20 lg:py-20 px-7 py-7 flex-1 order-2 md:order-1">
-                    <div className=" lg:space-y-7 md:space-y-2 lg:mb-3 md:mb-1">
+                  <div className=" lg:space-y-10 md:space-y-2 lg:mb-3 md:mb-1">
+                    <div className="flex flex-col gap-7 items-start">
                       <img
                         src={item.icon}
                         alt="icon"
-                        className="w-auto lg:h-12 md:h-8 h-6 mb-1"
+                        className="w-auto lg:h-20 md:h-8 h-6 mb-1"
                       />
-                      <h3 className="lg:text-5xl md:text-2xl text-xl font-semibold uppercase font-futura text-blue-900  ">
+                      <h3 className="lg:text-6xl  md:text-4xl text-xl font-semibold uppercase font-futura text-blue-900   ">
                         {item.heading}
                       </h3>
                     </div>
-                    <p className="text-textB lg:text-lg md:text:lg text-sm mb-4 w-[100%]">
+                    <p className="text-textB lg:text-xl md:text:lg text-sm mb-4 w-[90%] leading-[150%] ">
                       {item.text}
                     </p>
-
+                    </div>
                     <div className="flex items-center gap-3">
                       <div className="flex items-center lg:gap-3 md:gap-2 gap-1">
                         <div className="flex lg:-space-x-3 md:-space-x-2 -space-x-1">
@@ -174,7 +175,7 @@ const ResultCard = () => {
                               key={i}
                               src={avt}
                               alt="avatar"
-                              className="lg:w-8 lg:h-8 md:h-6 md:w-6 h-4 w-4 rounded-full border-2 border-white"
+                              className="lg:w-12 lg:h-12 md:h-6 md:w-6 h-4 w-4 rounded-full border-2 border-white"
                             />
                           ))}
                         </div>

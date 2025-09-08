@@ -5,7 +5,7 @@ const RestrictedTop = () => {
   return (
     <div className="mt-11 space-y-5 ">
       <div className="space-y-1 text-center">
-        <h1 className="text-[2.75rem] text-blue-900  font-extrabold uppercase font-futura">
+        <h1 className="text-5xl text-blue-900  font-extrabold uppercase font-futura">
           best for restricted Topic
         </h1>
         <p className="text-sm text-textB text-center ">

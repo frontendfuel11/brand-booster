@@ -135,7 +135,7 @@ export const PricingTable = () => {
   const [active, setActive] = useState("en");
 
   return (
-    <div className="overflow-x-auto p-6">
+    <div className="overflow-x-auto p-6 mt-10 ">
       <div className="min-w-screen px-13.5">
         <table className="table-auto w-full text-sm text-center border-collapse">
           <thead >
@@ -159,7 +159,7 @@ export const PricingTable = () => {
                 <div className="flex items-center justify-center  mt-20  w-[14.31rem]  bg-[#E9EAEB] rounded-full  p-1.5">
                   <button
                     onClick={() => setActive("en")}
-                    className={`w-[27rem] h-11 rounded-full gap-2 flex items-center justify-center  p-1.5 text-sm  ${
+                    className={`w-[29rem] h-11 rounded-full gap-2 flex items-center justify-center  p-1.5 text-sm  ${
                       active === "en"
                         ? " bg-white text-textD  "
                         : " text-textB "

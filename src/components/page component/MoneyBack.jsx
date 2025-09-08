@@ -6,19 +6,19 @@ import cicon2 from "../../asset/images/c logos/dj.png";
 
 const MoneyBack = () => {
   return (
-    <div className="w-[82rem] relative h-105 flex flex-col items-center mx-auto  my-40 pt-17.5 px-15 bg-purple-50 rounded-2xl">
+    <div className="w-[95%] relative h-130 flex flex-col items-center mx-auto  my-40 pt-26 px-15 bg-purple-50 rounded-2xl">
       <div className="text-center  flex items-center justify-center flex-col">
         <div className="space-y-6 ">
-          <h1 className="font-futura text-[3.75rem] tracking-[-2%] font-extrabold uppercase text-blue-900">
+          <h1 className="font-futura text-7xl tracking-[1px] font-extrabold uppercase text-blue-900">
             money back gurantee
           </h1>
-          <p className="text-lg text-[#414651] leading-[150%] ">
+          <p className="text-xl text-[#414651] leading-[170%] ">
             In the event that we cannot publish your news story on the news
             outlets included in your <br /> chosen publishing package, you will
             be entitled to a full refund.
           </p>
         </div>
-        <button className="bg-gradient-to-tr from-sky to-blue w-[204px] h-12 flex items-center justify-center  text-white font-normal relative  text-lg rounded-full mt-11 cursor-pointer">
+        <button className="bg-gradient-to-tr from-sky to-blue w-[230px]  h-14 flex items-center justify-center  text-white font-normal relative  text-lg rounded-full mt-11 cursor-pointer border-1 border-sky">
           Get started
         </button>
       </div>
